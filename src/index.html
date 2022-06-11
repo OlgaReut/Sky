@@ -11,6 +11,11 @@
 
     <title>Sky</title>
 
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -22,9 +27,9 @@
 
         <div class="header_top">
             <div class="header_head container">
-                <div class="title">
+                <div class="header_title">
                     <img src="./img/icons/image1.png" alt="wolf">
-                    <h3>Wolf House</h3>
+                    <h4>Wolf House</h4>
                 </div>
 
                 <div class="search">
@@ -72,25 +77,444 @@
             <button class="top_button button">Button</button>
         </div>
 
-        <div class="body_products" id="snowboard">
-            <div class="product">
-                <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
-                <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
-                <div class="product_footer">
-                    <div class="product_count">
-                        <p class="count1">&#65284; 398.93</p>
-                        <p class="count2">&#65284; 499.00</p>
+        <div class="body_main container">
+            <h2 class="title" id="snowboard">Snowboards</h2>
+
+            <div class="body_general">
+                <div class="body_menu">
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Cattegories</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />All Mountain Snowboards (51)</label>
+                        </div>
                     </div>
-                    <div class="product_rating">
-                        <img src="./img/icons/Star.png" alt="">
-                        <img src="./img/icons/Star.png" alt="">
-                        <img src="./img/icons/Star.png" alt="">
-                        <img src="./img/icons/Star.png" alt="">
-                        <img src="./img/icons/Star (1).png" alt="">
+                    <div class="view_links"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Gender</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />Men' (6)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Women's (32)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />Unisex (52)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Brans</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />Arbor (19)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Bataleon (6)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />Capita (14)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Snowboards Lenght (cm)</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />80 to 149 (39)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />150 to 159 (79)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />160 to 169 (36)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Snowboards Shape</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />Directional (39)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Directional Twin (36)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />True Twin (26)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Snowboards Style</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />All Mountain (64)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />Freeride (22)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />Freestyle (22)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Price</option>
+                          </select>
+                        </div>
+                        <div id="checkboxes">
+                          <label for="one">
+                            <input type="checkbox" id="one" />&#65284;50.00 to &#65284;99.99 (1)</label>
+                          <label for="two">
+                            <input type="checkbox" id="two" />&#65284;100.00 to &#65284;199.99 (1)</label>
+                          <label for="three">
+                            <input type="checkbox" id="three" />&#65284;200.00 to &#65284;499.99 (52)</label>
+                        </div>
+                    </div>
+                    <div class="view_links2"><a class="view_link" href="#">View more...</a></div>
+
+                    <div class="multiselect2">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Snowboard Profile</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="multiselect2 flex_select">
+                        <div class="selects" onclick="showCheckboxes()">
+                          <select>
+                            <option>Flex</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body_products">
+                    <div class="sorting">
+                        <p>170 Matches found</p>
+                        <div class="sorting_menu">
+                            <div class="view_menu">
+                                <select class="view" name="View">
+                                    <option value="9">9</option>
+                                    <option value="8">8</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+
+                            <div class="sort_menu">
+                                <select class="sort" name="Sort By">
+                                    <option value="">Most popular</option>
+                                    <option value="">Most expensive</option>
+                                    <option value="">Сheapest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_cards">
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="board" src="./img/icons/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.jpg" alt="snowboard">
+                            <p><b>Niche:</b> Nightshade Snowboard - Women's - 2019/2022</p>
+                            <div class="product_footer">
+                                <div class="product_count">
+                                    <p class="count1">&#65284; 398.93</p>
+                                    <p class="count2">&#65284; 499.00</p>
+                                </div>
+                                <div class="product_rating">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star.png" alt="">
+                                    <img src="./img/icons/Star (1).png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product2">
+                            <img src="./img/icons/images2.jpg" alt="mountains">
+                            <h6>EVO TRIP</h6>
+                            <p>ADVANTURE TRAVEL PACKAGE</p>
+                            <a href="#">Travel with Us</a>
+                        </div>
+                    </div>
+                    <div class="page_menu">
+                        <select class="page" name="Page">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="title2">Best Sellers</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper_products">
+                            <div class="swiper_product">
+                                <img src="./img/icons/042.jpg" alt="POC">
+                                <p>POC Obex Spin Helmet</p>
+                                <p><b>&#65284; 279.95</b></p>
+                            </div>
+                            <div class="swiper_product">
+                                <img src="./img/icons/042.jpg" alt="POC">
+                                <p>POC Obex Spin Helmet</p>
+                                <p><b>&#65284; 279.95</b></p>
+                            </div>
+                            <div class="swiper_product">
+                                <img src="./img/icons/042.jpg" alt="POC">
+                                <p>POC Obex Spin Helmet</p>
+                                <p><b>&#65284; 279.95</b></p>
+                            </div>
+                            <div class="swiper_product">
+                                <img src="./img/icons/042.jpg" alt="POC">
+                                <p>POC Obex Spin Helmet</p>
+                                <p><b>&#65284; 279.95</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+            <div class="body_down">
+                <div class="down_left">
+                    <h5>Need help?</h5>
+                    <p>Talk to our Gearheads 24/7 about your needs</p>
+                    <button class="button">Chat Now</button>
+                    <div class="down_link"><a href="tel:1-800-409-4502">Or Call: 1-800-409-4502</a></div>
+                </div>
+
+                <div class="down_right">
+                    <h5>Stay in the know</h5>
+                    <p>Be the first to see sales & new gear!</p>
+                    <div class="email">
+                        <input type="text">
+                        <button class="button">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer_line">
+            <nav class="footer_navigation">
+                <ul class="footer_lists">
+                    <li class="footer_list"><a class="footer_link" href="#">Cattegories</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Ski boots</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Ski accessories</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Apparel</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Snowboard shop</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Brands</a></li>
+                    <li class="footer_list"><a class="footer_link" href="#">Sale</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer_menu container">
+            <div class="about">
+                <h6>Gift Certificates</h6>
+                <a href="#">e-Gift Certificate</a>
+                <a href="#">Classic Gift Card</a>
+            </div>
+
+            <div class="about">
+                <h6>Resources</h6>
+                <a href="#">Returns</a>
+                <a href="#">Order Status</a>
+                <a href="#">Sale Item Policy</a>
+                <a href="#">Sales Tax Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Do Not Sall My Personal Data</a>
+                <a href="#">International Shipping Policy</a>
+                <a href="#">Learning Resources</a>
+                <a href="#">Gift Card Terms & Conditions</a>
+                <a href="#">Special Group Offers</a>
+            </div>
+
+            <div class="about">
+                <h6>About M-SPORT</h6>
+                <a href="#">About M-SPORT</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Group Sales</a>
+                <a href="#">Land Your Dream Job</a>
+                <a href="#">Affiliate Program</a>
+                <a href="#">Accessibility Statement</a>
+            </div>
+
+            <div class="about_icons">
+                <div class="icons">
+                    <img src="./img/icons/Facebook - Negative.png" alt="Facebook">
+                    <img src="./img/icons/Vector (2).png" alt="Twitter">
+                    <img src="./img/icons/YouTube - Negative - Alternate.png" alt="YouTube">
+                    <img src="./img/icons/Group (2).png" alt="Instagram">
+                </div>
+                <p>Download the M-SPORT App</p>
+                <div class="app">
+                    <img src="./img/icons/googleplay.png" alt="GooglePlay">
+                    <img src="./img/icons/appstore.png" alt="AppStore">
+                </div>
+            </div>
+        </div>
+        <div class="footer_logo">
+            <img src="./img/icons/logo.png" alt="logo">
+            <p>&#9400; M-SPORT.com - All RightsReserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module" src="./js/body.js"></script>
 </body>
 </html>
