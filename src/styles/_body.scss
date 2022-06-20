@@ -31,10 +31,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1rem;
 
     border-bottom: 2px solid $color-lightgrey;
 
     .body_menu {
+        margin-top: 0;
         width: 30%;
 
         .view_links {
@@ -264,8 +266,19 @@
                 }
             }
 
+            .product_button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .pr7 {
+                padding-bottom: 3.5rem;
+            }
+
             .product2 {
                 text-align: center;
+                padding-bottom: 3.5rem;
 
                 h6 {
                     font-weight: 700;
