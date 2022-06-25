@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/media_product.css">
 </head>
 <body>
     <header>
@@ -71,6 +72,7 @@
         </div>
     </header>
     <main class="container">
+        <button class="navigation_button button btn2">Categories</button>
         <span class="text1">Snowboarding / Snowboards /</span>
         <span class="text2">All-Mountain Snowboards</span>
 
@@ -143,25 +145,27 @@
                 <button class="button add_wish"><a class="button_wish" href="./pages/product.html">Add to wish list</a></button>
 
                 <button class="accordion2">Technical specs</button>
-                <div class="panel_grid">
-                    <div>Best Use:</div>
-                    <div>Snowboarding</div>
-                    <div>Snowboard Style:</div>
-                    <div>All-mountain</div>
-                    <div>Snowboard Shape:</div>
-                    <div>Directional</div>
-                    <div>Snowboard Profile:</div>
-                    <div>Camber</div>
-                    <a class="link_grid" href="#">View more...</a>
+                <div class="panel">
+                    <div class="panel_grid">
+                        <div>Best Use:</div>
+                        <div>Snowboarding</div>
+                        <div>Snowboard Style:</div>
+                        <div>All-mountain</div>
+                        <div>Snowboard Shape:</div>
+                        <div>Directional</div>
+                        <div>Snowboard Profile:</div>
+                        <div>Camber</div>
+                        <a class="link_grid" href="#">View more...</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <h2 class="recommended">Recommended Items</h2>
 
-        <div class="swiper2">
-            <div class="swiper-wrapper2">
-                <div class="swiper-slide2">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="swiper_products2">
                         <div class="swiper_product2">
                             <img src="../img/icons/042.jpg" alt="POC">
@@ -281,6 +285,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <script type="module" src="../js/swiper.js"></script>
     <script src="../js/product.js"></script>
 </body>
 </html>

@@ -29,21 +29,15 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+const hamburger = document.querySelector('.btn2')
+const naviMenu = document.querySelector('.navigation_lists')
 
-import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
-      
-const swiper = new Swiper('.swiper2', {
-    direction: 'horizontal',
-    loop: true,
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active')
+    naviMenu.classList.toggle('active')
+})
 
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-});
-
-export default swiper;
+document.querySelectorAll('.navigation_link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active')
+    naviMenu.classList.remove('active')
+}))
